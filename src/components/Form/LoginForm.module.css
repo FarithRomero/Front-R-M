@@ -1,0 +1,61 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 25%;
+    position: relative;
+    left: 35%;
+  }
+  
+  .content {
+    width: 50%;
+    background-color: #ffffff12;
+    border: solid 2px rgba(255, 255, 255, 0.133);
+    border-radius: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centra el contenido verticalmente */
+  }
+  
+  .logo {
+    width: 100%; /* La imagen se ajusta al ancho del contenedor */
+    max-height: 200px; /* Establece una altura máxima para la imagen */
+    object-fit: contain; /* Ajusta la imagen sin deformarla */
+    margin-bottom: 20px;
+    border-radius: 5%;
+    opacity: 0.8;
+  }
+  
+  label {
+    font-size: 15px;
+    font-family: Raleway;
+    color: #fff;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+  
+  input {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: Raleway;
+    border: solid 1px white;
+    border-radius: 2%;
+  }
+  
+  button {
+    display: flex;
+    flex-direction: row;
+    background-color: #fca311;
+    color: #fff;
+    padding: 7px 63px;
+    border: solid 1px white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    align-self: center; /* Centra el botón horizontalmente */
+  }
+  

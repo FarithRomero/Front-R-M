@@ -1,0 +1,32 @@
+.title{
+    color: rgb(34, 230, 64);
+    font-family: Raleway;
+    font-size: 60px;
+    position: absolute;
+    left: 800px;
+    top: 15%;
+    text-shadow: 4px 3px 4px rgba(13, 5, 5, 0.774);
+}
+
+.description{
+    color: rgba(251, 255, 255, 0.987);
+    font-family: Raleway;
+    font-size: 20px;
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top:35%;
+    text-shadow: 5px 3px 1px rgba(43, 50, 43, 0.894);
+}
+
+.imagen{
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 27%;
+    border-radius: 100%;
+    border: solid 3px;
+    border-color: rgba(91, 231, 15, 0.97); 
+};
+

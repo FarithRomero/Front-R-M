@@ -1,0 +1,23 @@
+
+.styleCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 90%;
+    text-align: center;
+    font-family: Geologica;
+    font-size: 85%;
+    margin: 1px;
+    padding: 6px 8px 12px 8px;
+    background-color: #92968e31;
+    border: 1px solid#6462655f;
+    border-radius: 5%;
+    box-shadow: 0 10px 25px 5px #3D0000;
+    color: #e2ebe4;
+    text-shadow: 2px 3px 1px rgba(0, 0, 0, 0.894);
+    cursor:pointer; 
+    line-height: 1.4rem;
+};  
+
+
