@@ -1,30 +1,79 @@
-.container {
+.emailError{
+  position: absolute;
+  font-family: Geologica;
+  font-size: 0.7rem;
+  top: 3.5rem;
+  left: 19.2rem;
+  color: #00fc37;
+  }
+
+  .error{
+    position: absolute;
+    font-family: Geologica;
+    font-size: 0.7rem;
+    top: 3.5rem;
+    left: 34.2rem;
+    color: #00fc37;
+  }
+
+  .labelForm{ 
+    margin-right:2px;
+    margin-left: 5px;
+    font-family: Geologica;
+    font-size: 85%;
+    color:#e2ebe4;
+  }
+  
+  .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30rem;
-    width: 20rem;
+    height: 5rem;
+    width: 61rem;
+    position: inherit;
+    left: -14rem;
+    top: 16rem;
+  }
+
+  .button {
+    position: absolute;
+    right: 10rem;
+    border: solid 1px #ffffff94;
+    background-color: #f8d617c8;
+    margin-right: 1.5rem;
+    width: 5rem;
+    height: 1.4rem;
+    font-family: Geologica;
+    font-size: 75%;
+    color:#e2ebe4;
+    border-radius: 2%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    }
+
+  .button:hover {
+      transform: scale(1.1);
+      background-color: #edf817;
+      color: darkblue;
+  }
+    
+.logoAutentic {
     position: relative;
-    left: 27rem;
+    left: 14rem;
+    top: 3rem;
+    max-height: 190px;
+    object-fit: contain;
+    margin-bottom: 0px;
+    opacity: 1;
   }
-  
-  .content {
-    width: 50%;
-    background-color: #ffffff12;
-    border: solid 2px rgba(255, 255, 255, 0.133);
-    border-radius: 5%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
+
+  .boxDiv{
+    background-color: #50576879;
+    border-radius: 3%;
+    width: 38rem;
+    height: 23rem;
+    position: absolute;
+    left: 29rem;
+    top: 10rem;
     align-items: center;
-    justify-content: center; /* Centra el contenido verticalmente */
-  }
-  
-  .logo {
-    width: 100%; /* La imagen se ajusta al ancho del contenedor */
-    max-height: 200px; /* Establece una altura máxima para la imagen */
-    object-fit: contain; /* Ajusta la imagen sin deformarla */
-    margin-bottom: 20px;
-    border-radius: 5%;
-    opacity: 0.8;
   }

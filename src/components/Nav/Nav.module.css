@@ -16,8 +16,8 @@
         transform: scale(1.1);
         background-color: #edf817;
         color: darkblue;
-
     }
+    
 .container{
     display: flex;
     flex-direction: row;

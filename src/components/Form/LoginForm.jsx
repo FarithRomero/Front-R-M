@@ -1,6 +1,6 @@
 import React from "react";
 import style from './LoginForm.module.css';
-import logo from "./../../assets/rick-and-morty1.jpg";
+import logo from "./../../assets/rick-and-morty1.png";
 import { useState } from "react";
 import { validate } from "../../validation";
 
@@ -37,22 +37,19 @@ export default function LoginForm({login}) {
   };
 
   return (
-    <div className={style.container}>
-
-      <div className={style.content}>
-        <img className={style.logo} src={logo} alt="No se pudo cargar la imagen" />
-        <form>
-          <label>Email:</label>
+      <div className={style.boxDiv}>
+        <img className={style.logoAutentic}  src={logo} alt="No se pudo cargar la imagen" />
+        <form className={style.container}>
+          <label className={style.labelForm}>Email:</label>
           <input type="text" name="email" placeholder="Ingresa tu e-mail" value={userData.email} onChange={handleChange}/>
-          {errors.email && <span>{errors.email}</span>}
+          {errors.email && <span className={style.emailError}>{errors.email}</span>}
 
-          <label>Password:</label>
+          <label className={style.labelForm}>Password:</label>
           <input type="password" name="password" placeholder="Ingresa tu contraseña" value={userData.password} onChange={handleChange} />
-          {errors.password && <span>{errors.password}</span>}
-          <button type="submit" onClick={handledSubmit}>Submit</button>
+          {errors.password && <span className={style.error}>{errors.password}</span>}
+          <button className={style.button} type="submit" onClick={handledSubmit}>Submit</button>
         </form>
-      </div>
 
-    </div>
+      </div>
   );
 };
