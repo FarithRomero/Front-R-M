@@ -1,17 +1,6 @@
-.App{
-    display: flex;
-    flex-direction: column;
-    margin: 0px;
-    position: absolute;
-    top: 21px;
-    left: 1px;
-    height: 674px;
-    width: 100vw;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-  };
-  
-  .Cards{
-    position:absolute;
+.logo{
+  position: absolute;
+  top: -3rem;
+  left: -1rem;
+  opacity: 0.6;
   };

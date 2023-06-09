@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 25%;
+    height: 30rem;
+    width: 20rem;
     position: relative;
-    left: 35%;
+    left: 27rem;
   }
   
   .content {
@@ -28,34 +28,3 @@
     border-radius: 5%;
     opacity: 0.8;
   }
-  
-  label {
-    font-size: 15px;
-    font-family: Raleway;
-    color: #fff;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-  }
-  
-  input {
-    padding: 10px;
-    margin-bottom: 10px;
-    font-family: Raleway;
-    border: solid 1px white;
-    border-radius: 2%;
-  }
-  
-  button {
-    display: flex;
-    flex-direction: row;
-    background-color: #fca311;
-    color: #fff;
-    padding: 7px 63px;
-    border: solid 1px white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 15px;
-    align-self: center; /* Centra el botón horizontalmente */
-  }
-  

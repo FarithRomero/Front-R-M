@@ -1,54 +1,52 @@
-   import React from "react";
-   import style from "./Card.module.css";
-   // import { useNavigate } from "react-router-dom";
-   import { Link } from "react-router-dom";
-   import { connect } from "react-redux";
-   import { addFav, removeFav } from "../../redux/action";
-   import { useState, useEffect } from "react";
+      import React from "react";
+      import style from "./Card.module.css";
+      import { Link, NavLink } from "react-router-dom";
+      import { connect } from "react-redux";
+      import { addFav, removeFav } from "../../redux/action";
+      import { useState, useEffect } from "react";
 
-  function Card({ id, name, especies, gender, image, onClose, origin, addFav, removeFav, myFavorites }){
+   function Card({ id, name, especies, gender, image, onClose, origin, addFav, removeFav, myFavorites }){
+      const [isFav, setFav] = useState(false);
 
-   const [isFav, setFav] = useState(false);
-
-   const handleFavorite= () => {
-      if(isFav){
-         setFav(false);
-         removeFav(id);
-      } 
-      else {
-         setFav(true);
-         addFav({id, name, especies, gender, image})
-      }
-   }
-
-   useEffect(() => {
-      myFavorites.forEach((fav) => {
-         if (fav.id === id) {
+      const handleFavorite= () => {
+         if(isFav){
+            setFav(false);
+            removeFav(id);
+         } 
+         else {
             setFav(true);
+            addFav({id, name, especies, gender, image})
          }
-      });
-   }, [myFavorites]);
+      }
 
-      return (
-         <div > 
-            <div className = {style.styleCard}>
-               {
-                  isFav?(
-                     <button onClick={handleFavorite}>❤️</button>
-                  ) : (
-                     <button onClick={handleFavorite}>🤍</button>
-                  )
-               }
-               <button  onClick={()=> onClose(id)} >X</button> 
-               <img src={image} alt="Imagen no se puede cargar"/> 
-               <Link to={`/Detail/${id}`}>
-                  <h1>{name}</h1>   
-               </Link>
-               <h2 >{origin} </h2>  
+      useEffect(() => {
+         myFavorites.forEach((fav) => {
+            if (fav.id === id) {
+               setFav(true);
+            }
+         });
+      }, [myFavorites]);
+
+         return (
+            <div className={style.Card}> 
+                  {
+                     isFav?(
+                        <button className={style.favButton} onClick={handleFavorite}>❤️</button>
+                     ) : (
+                        <button  className={style.favButton} onClick={handleFavorite}>🤍</button>
+                     )
+                  }
+                  <button className={style.closeButton} onClick={()=> onClose(id)} >X</button> 
+                  <img  className = {style.image} src={image} alt="Imagen no se puede cargar"/> 
+                  <NavLink to={`/Detail/${id}`} className={style.link}>
+                     <h1>{name}</h1>   
+                  </NavLink>
+
+                  <h2 >{origin} </h2>  
+
             </div>
-         </div>
-      );
-   };
+         );
+      };
 
    const mapDispatchToProps = (dispatch) => {
       return {

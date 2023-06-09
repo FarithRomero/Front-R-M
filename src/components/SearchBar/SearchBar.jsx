@@ -1,6 +1,5 @@
-import {SearchContainer, SearchInput, SearchIcon, SearchIconContainer} from "./SearchBar.styles";
 import { useState } from "react"; //creo un nuevo estado
-
+import style from './SearchBar.module.css';
 
 export default function SearchBar(props) {
    const {onSearch} = props;
@@ -14,14 +13,11 @@ export default function SearchBar(props) {
       setId(input);
    
    };
-
       return (
-      <SearchContainer>
-         <SearchInput  type='search' value={id} onChange={handleChange}/>
-         <SearchIconContainer>
-            <SearchIcon onClick={() => onSearch(id)}></SearchIcon>
-         </SearchIconContainer>
-      </SearchContainer> 
+      <div>
+         <input className={style.input} type='search' value={id} onChange={handleChange}/>
+            <button className={style.button} onClick={() => onSearch(id)}>Search</button>
+      </div> 
    );
 };
 
