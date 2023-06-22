@@ -5,7 +5,7 @@ import { filterCards, orderCards } from "../../redux/action.js";
 import { useState } from "react";
 import style from './Favorites.module.css'
 
-function Favorites({myFavorites}, onClose){
+function Favorites({myFavorites}){
     const [aux, setAux] = useState(false);
 
     const dispatch = useDispatch();    

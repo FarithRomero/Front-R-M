@@ -41,9 +41,7 @@
                   <NavLink to={`/Detail/${id}`} className={style.link}>
                      <h1>{name}</h1>   
                   </NavLink>
-
                   <h2 >{origin} </h2>  
-
             </div>
          );
       };

@@ -38,7 +38,7 @@ export default function LoginForm({login}) {
 
   return (
       <div className={style.boxDiv}>
-        <img className={style.logoAutentic}  src={logo} alt="No se pudo cargar la imagen" />
+        <h1 className={style.logoAutentic}>Ingresa tu información</h1>
         <form className={style.container}>
           <label className={style.labelForm}>Email:</label>
           <input type="text" name="email" placeholder="Ingresa tu e-mail" value={userData.email} onChange={handleChange}/>
